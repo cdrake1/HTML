@@ -1,9 +1,9 @@
 [![MasterHead](http://jazon-anime.weebly.com/uploads/2/6/1/2/26123867/4940096_orig.jpg)]
 <h1 align="center">Hi 👋, I'm Collin D</h1>
-<h3 align="center">A passionate Student from the United States</h3>
+<h3 align="center">A passionate Student at Marist college studying computer science and cybersecurity</h3>
 <img align="right" alt="Coding" width="400" src="https://media4.giphy.com/media/nyNS6Cfrnkdj2/200.gif">
 
-- 🌱 I’m currently learning **Java, PHP, HTML**
+- 🌱 I’m currently learning **SQL and HTML**
 
 - 🤝 I’m looking for help with **Learning HTML**
 
@@ -20,6 +20,3 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=cdrake1&show_icons=true&theme=tokyonight&title_color=0061ff&text_color=0056d6&locale=en&layout=compact" alt="cdrake1" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=cdrake1&show_icons=true&locale=en" alt="cdrake1" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=cdrake1&" alt="cdrake1" /></p>

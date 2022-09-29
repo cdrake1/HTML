@@ -2,32 +2,28 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title> Collin Project Website </title>
+
+        <meta charset="UTF-8">
 
         <link rel="stylesheet" href="personalcss/stylespersonal.css">
 
     </head>
 
     <body>
-        <header>
-            <div class="logo"
-                <img src="" alt="logo">
+        <!--dropdown menu and header-->
+        <div id = "header">
+            <div class="dropdown">
+                <button class="dropdownbtn"> Welcome </button>
+                <div class="dropdown-list">
+                    <a href="#"> Home</a>
+                    <a href="#"> My Projects</a>
+                    <a href="#"> My Interests</a>
+                    <a href="#"> My Resume and Courses</a>
+                </div>
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class=" whatever"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                </ul>
-            </nav>
-
-        </header>
+        </div>
 
         <section class="intro" id="home">
             <h1 class="section__title section--title--intro">
@@ -66,7 +62,6 @@
                 </div>
 
             </div>
-            <a href="#projects" class="btn"> My Projects</a>
         </section>
 
         <section class="about-me" id="about">
@@ -74,12 +69,13 @@
             <p class="section__subtitle section__subtitle--a bout"></p>
 
             <div class="about-me__body">
-                <p> Hello, my name is Collin Drake and im a student at Marist college. Im majoring in computer science and looking to start a double major in cybersecurity. I enjoy coding, soccer, MMA and learning new things.  Im very into popular culture and I love traveling to new countries. So if you're into any new video games, movies, shows or music let me know!  I always try to keep myself busy doing something fun or beneficial because it keeps my appetite for learning full. My friends would describe me as a workhorse, but id say im just disciplined. If youre interested in learning more about me find out ways to contact me below! :)   </p>
+                <p> Hello, my name is Collin Drake and im a student at Marist college. Im majoring in computer science and looking to start a double major in cybersecurity. I enjoy coding, soccer, MMA and learning new things.  Im very into popular culture and I love traveling to new countries. So if you're into any new video games, movies, shows or music let me know!  I always try to keep myself busy doing something fun or beneficial because it keeps my appetite for learning full. My friends would describe me as a workhorse, but id say im just disciplined. If you're interested in learning more about me find out ways to contact me below! :)   </p>
             </div>
 
             <img src="img/537BC6CC-05E7-435A-BDA2-E98972CB8653_1_102_o.jpeg" alt="A picture of me doing something I like/having fun">
         </section>
 
+        <!--add to projects page-->
         <section class="my-projects" id="project">
             <h2 class="section__title">My Projects</h2>
             <p class="section__subtitle"></p>
@@ -91,20 +87,16 @@
         </section>
 
         <footer>
+            <h3> Important Links </h3>
             <a href="mailto: Collin.Drake1@marist.edu" class="footer-link"> Collin.Drake1@marist.edu </a>
-            <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link"
-                href="">a</a></li>
-
-                <li class="social-list__item"><a class="social-list__link"
-                href="">b</a></li>
-
-                <li class="social-list__item"><a class="social-list__link"
-                href="">c</a></li>
-
-                <li class="social-list__item"><a class="social-list__link"
-                href="">d</a></li>
-            </ul>
+            <br>
+            <a href="https://www.marist.edu" class="footer_link">Marist College </a>
+            <br>
+            <a href="#projects" class="footer-link"> My Projects </a>
+            <br>
+            <a href="https://github.com/cdrake1" class="footer-link"> My Github </a>
+            <br>
+            <a href="https://www.linkedin.com/in/collin-drake-8a9683230" class="footer-link"> My Linkedin </a>
         </footer>
         
     </body>

@@ -25,111 +25,115 @@
     </style>
 </head>
 
-<body>
-    <header> My MYSQL Reference Page </header>
-    <hr>
+    <body>
+        <header> My MYSQL Reference Page </header>
+        <hr>
 
-    <section>
-        <h3> Database Commands </h3>
-        <table border="5">
-            <tr>
-                <th> Commands </th>
-                <th> Syntax </th>
-            </tr>
-            <tr>
-                <td> CREATE DATABASE (name); </td>
-                <td> creates a database with the name you provide to terminal </td>
-            </tr>
-                <td> SHOW DATABASES; </td>
-                <td> shows all the databases stored on the device </td>
-            <tr>
-                <td> USE (database Name); </td>
-                <td> selects a database to use and stores tables created inside the database </td>
-            </tr>
-                <td> SHOW TABLES; </td>
-                <td> shows the tables stored inside the database </td>
-            <tr>
-                <td> DROP DATABASE IF EXISTS (database name); </td>
-                <td> drops an existing database along with its stored tables and data </td>
-            </tr>
-        </table>
-    </section>
+        <section>
+            <h3> Database Commands </h3>
+            <table border="5">
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax </th>
+                </tr>
+                <tr>
+                    <td> CREATE DATABASE (name); </td>
+                    <td> creates a database with the name you provide to terminal </td>
+                </tr>
+                <tr>
+                    <td> SHOW DATABASES; </td>
+                    <td> shows all the databases stored on the device </td>
+                </tr>
+                <tr>
+                    <td> USE (database Name); </td>
+                    <td> selects a database to use and stores tables created inside the database </td>
+                </tr>
+                <tr>
+                    <td> SHOW TABLES; </td>
+                    <td> shows the tables stored inside the database </td>
+                </tr>
+                <tr>
+                    <td> DROP DATABASE IF EXISTS (database name); </td>
+                    <td> drops an existing database along with its stored tables and data </td>
+                </tr>
+            </table>
+        </section>
 
-    <section>
-        <h3> Table Column Commands </h3>
-        <table border="5">
-            <tr>
-                <th> Commands </th>
-                <th> Syntax</th>
-            </tr>
-            <tr>
-                <td> CREATE TABLE (table name); </td>
-                <td> creates a table with the specified name </td>
-            </tr>
-                <td> DROP TABLE (table name); </td>
-                <td> drops a table with the name specified </td>
-            <tr>
-                <td> EXPLAIN (table name); </td>
-                <td> explains the contents of a table </td>
-            </tr>
-            <tr>
-                <td> SELECT * FROM (table name); </td>
-                <td> shows specified data from the table </td>
-            </tr>
-        </table>
-    </section>
+        <section>
+            <h3> Table Column Commands </h3>
+            <table border="5">
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax</th>
+                </tr>
+                <tr>
+                    <td> CREATE TABLE (table name); </td>
+                    <td> creates a table with the specified name </td>
+                </tr>
+                    <td> DROP TABLE (table name); </td>
+                    <td> drops a table with the name specified </td>
+                <tr>
+                    <td> EXPLAIN (table name); </td>
+                    <td> explains the contents of a table </td>
+                </tr>
+                <tr>
+                    <td> SELECT * FROM (table name); </td>
+                    <td> shows specified data from the table </td>
+                </tr>
+            </table>
+        </section>
 
-    <section>
-        <h3> Column Attributes and Modifiers </h3>
-        <table border="5">
-            <tr>
-                <th> Commands </th>
-                <th> Syntax </th>
-            </tr>
-            <tr>
-                <td> CREATE TABLE (table name); </td>
-                <td> creates a table with the specified name </td>
-            </tr>
-            <tr>
-                <td> ALTER TABLE (table name); </td>
-                <td> adds a new column to the table </td>
-            </tr>
+        <section>
+            <h3> Column Attributes and Modifiers </h3>
+            <table border="5">
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax </th>
+                </tr>
+                <tr>
+                    <td> ALTER COLUMN (column name); </td>
+                    <td> alters an existing columns data </td>
+                </tr>
+                <tr>
+                    <td> DROP COLUMN (column name); </td>
+                    <td> drops a column from the table </td>
+                </tr>
 
-        </table>
-    </section>
-    
-    <section>
-        <h3> Table Data Commands </h3>
-        <table border="5">
-            <tr>
-                <th> Commands </th>
-                <th> Syntax </th>
-            </tr>
-            <tr>
-                <td> INSERT INTO (table name) VALUES (table info); </td>
-                <td> inserts new rows into the table </td>
-            </tr>
-            <tr>
-                <td> UPDATE (table name) SET (information you want to change to); </td>
-                <td> updates certain rows in the table </td>
-            </tr>
-            <tr>
-                <td> DELETE FROM (table name); </td>
-                <td> deletes certain table data </td>
-            </tr>
-            <tr>
-                <td> ALTER TABLE (table name); </td>
-                <td> adds a new column to the table </td>
-            </tr>
+            </table>
+        </section>
+        
+        <section>
+            <h3> Table Data Commands </h3>
+            <table border="5">
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax </th>
+                </tr>
+                <tr>
+                    <td> INSERT INTO (table name) VALUES (table info); </td>
+                    <td> inserts new rows into the table </td>
+                </tr>
+                <tr>
+                    <td> UPDATE (table name) SET (information you want to change to); </td>
+                    <td> updates certain rows in the table </td>
+                </tr>
+                <tr>
+                    <td> DELETE FROM (table name); </td>
+                    <td> deletes certain table data </td>
+                </tr>
+                <tr>
+                    <td> ALTER TABLE (table name); </td>
+                    <td> adds a new column to the table </td>
+                </tr>
 
-        </table>
-    </section>
-    <br>
-    <hr>
-    <footer>
-        Collin Drake
+            </table>
+        </section>
         <br>
-        October 9th 2022
-    </footer>
-</body>
+        <hr>
+        <footer>
+            Collin Drake
+            <br>
+            October 9th 2022
+        </footer>
+    </body>
 </html>

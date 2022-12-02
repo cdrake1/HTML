@@ -1,0 +1,231 @@
+<!--         Sample HTML code to simulate an IPHONE  display  -->
+<head>
+    <title>Home Page on an IPhone </title>
+    
+    
+	<!-- JS to pop up a message -->
+	<script type="text/javascript">
+        function showMessage() {
+                
+				outputElement = document.getElementById("err").innerHTML="<font color=red>An Error Message";
+        }
+    </script>
+    
+
+		<!-- styles used by the code below  -->
+	<style>
+	body {
+		background: #f4f6fc;
+  
+			&:after {
+				content: 'Made with ❤️ by Adiel Hercules';
+				position: absolute;
+				top: 0;	    right: 0;
+				padding: 10px;
+				background-color: #3F436B;
+				color: #fff;	opacity: 0.6;
+			}
+		}
+
+	.iphone-x {
+		position: relative;
+		margin: 40px auto;
+		width: 360px;	  height: 780px;
+		background-color: #7371ee;
+		background-image: linear-gradient(60deg, #7371ee 1%,#a1d9d6 100%);
+		border-radius: 30px;
+		box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+  
+		&:before,
+		&:after{
+				content: '';
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+		}
+  
+		// home button indicator
+		&:after {
+				bottom: 7px;	
+				width: 140px;	    height: 4px;
+				background-color: #f2f2f2;
+				border-radius: 10px;
+		}
+  
+		// frontal camera/speaker frame
+		&:before {
+				top: 0px;
+				width: 56%;	    height: 30px;
+				background-color: #1f1f1f;
+				border-radius: 0px 0px 40px 40px;
+		}
+  
+	i,
+	b,
+	s,
+	span {
+		position: absolute;	
+		display: block;
+		color: transparent;
+	}
+  
+	// speaker
+	i {
+		top: 0px;	    left: 50%;
+		transform: translate(-50%, 6px);
+		height: 8px;	    width: 15%;
+		background-color: #101010;
+		border-radius: 8px;
+		box-shadow: inset 0px -3px 3px 0px rgba(256, 256, 256, 0.2);
+	}
+  
+	// camera
+	b {
+		left: 10%;
+		top: 0px;
+		transform: translate(180px, 4px);
+		width: 12px;
+		height: 12px;
+		background-color: #101010;
+		border-radius: 12px;
+		box-shadow: inset 0px -3px 2px 0px rgba(256, 256, 256, 0.2);
+    
+		&:after {
+			content: '';
+			position: absolute;
+			background-color: #2d4d76;
+			width: 6px;		height: 6px;
+			top: 2px;		left: 2px;
+			top: 3px;		left: 3px;
+			display: block;
+			border-radius: 4px;
+			box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+		}
+	}
+  
+	// time
+	s {
+		top: 50px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		width: 100%;		
+		font-size: 70px;	    font-weight: 100;
+		padding-top: 60px;
+	}
+  
+	// action buttons
+	span {
+			bottom: 50px;
+			width: 40px;	    height: 40px;
+			background-color: rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+			left: 30px;
+    
+			& + span {
+				left: auto;
+				right: 30px;
+			}
+		}
+	}
+	.topnav{
+    background-color: #05386b;
+    overflow: hidden;
+    
+	}
+
+	.topnav a{
+		float: left;
+		color: #7371ee;
+		text-align: center;
+		padding: 10px 12px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.topnav a:hover {
+		background-color: #05386b;
+		color: #7371ee;
+	}
+
+	.topnav a.active{
+		background-color: #05386b;
+		color: #7371ee;
+	}
+</style>
+
+<!-- -------------------------------  ACTUAL HTML CODE STARTS HERE   ---------------------------------->
+</head>  
+
+<div class="iphone-x">
+	<html lang="en">
+
+    <head>
+
+        <title> Collin Project Website </title>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="personalcss/stylespersonal.css">
+
+    </head>
+
+    <body>
+        <!--dropdown menu and header-->
+        <div id = "header">
+            <div class="topnav">
+                <a class= "active" href="personalwebsite.html"> Home</a>
+                <a href="Myprojects.html"> My Projects</a>
+                <a href="Myinterests.html"> My Interests</a>
+                <a href="Myresume&courses.html"> My Resume and Courses</a>
+            </div>
+        </div>
+
+        <section>
+            <div class="img">
+                <h1 class="section__title section--title--intro">
+                    Hi, I'm
+                    <br>
+                     <strong> Collin Drake, </strong>
+                     <br>
+                     Computer Science Student.
+                </h1>
+                
+            </div>
+        </section>
+
+        <br>
+        
+        
+
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about"> About Me </h2>
+            <p class="section__subtitle section__subtitle--a bout"></p>
+
+            <div class="about-me__body">
+                <p> Hello, my name is Collin Drake and im a student at Marist college. Im majoring in computer science and looking to start a double major in cybersecurity. I enjoy coding, soccer, MMA and learning new things.  Im very into popular culture and I love traveling to new countries. So if you're into any new video games, movies, shows or music let me know!  I always try to keep myself busy doing something fun or beneficial because it keeps my appetite for learning full. My friends would describe me as a workhorse, but id say im just disciplined. If you're interested in learning more about me find out ways to contact me below! :)   </p>
+            </div>
+
+            <img src="img/537BC6CC-05E7-435A-BDA2-E98972CB8653_1_102_o.jpeg" alt="A picture of me doing something I like/having fun">
+        </section>
+
+     
+        <footer>
+            <h3> Important Links </h3>
+            <a href="mailto: Collin.Drake1@marist.edu" class="footer-link"> Collin.Drake1@marist.edu </a>
+            <br>
+            <a href="https://www.marist.edu" class="footer_link">Marist College </a>
+            <br>
+            <a href="#projects" class="footer-link"> My Projects </a>
+            <br>
+            <a href="https://github.com/cdrake1" class="footer-link"> My Github </a>
+            <br>
+            <a href="https://www.linkedin.com/in/collin-drake-8a9683230" class="footer-link"> My Linkedin </a>
+        </footer>
+        
+    </body>
+</html>
+  
+  
+  
+</div>

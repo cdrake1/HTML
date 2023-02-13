@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Module 3 </title>  
+  <meta charset="UTF-8">
+</head>
+
+<body>  <h1> Module 3: Input Fields, CSS &amp; JavaScript </h1>
+
+  <h2> &#10004; Input Fields </h2>
+
+  <h2> &#10004; JavaScript </h2>
+
+  <ul>
+      <li> <strong> Here is an input text box </strong>
+        <br> Enter First Name <input type="text" id="firstName">
+        <br> Enter Last Name <input type="text" id="lastName" value="Smith">
+        <br> Enter Address <input type="email" id="address" autofocus>
+        <br> Enter Zip Code <input type="number" id="zipCode" maxlength="5">
+        <br> Enter Comments <input type="text" id="comments" size="5"> 
+
+        <br> Here is the file <input type="file" id="Browse">
+        <br>
+        <br>
+
+
+      </li>
+  </ul>
+
+  <h2> &#10004; JavaScript </h2>
+  <p> <button onclick="doSomething()"> Our First Button </button></p>
+
+
+  <footer>
+  <hr>
+  <small> &copy; Collin Drake February 6,2023  </small>
+  </footer> 
+
+  <script>
+    function doSomething()
+    {
+      var element = document.getElementById("firstName");
+      firstName = element.value.trim();
+
+      if(firstName == "")
+      {
+        alert("please Enter your first name");
+      }
+      else
+      {
+        alert("Your first name is " + firstName + "!");
+      }
+      
+    }
+    function changeName() {
+      var lastName = document.getElementById("lastName");
+      lastName.value = "Smith";
+      <p> <button onclick="changeName()"> Change Last Name</button></p>
+    }
+  </script>
+
+</body>
+</html>
+

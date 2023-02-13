@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Module 3 </title>  
+  <meta charset="UTF-8">
+</head>
+
+<body>  <h1> Mock Login </h1>
+
+  <ul>
+      <li>
+        <br> Enter Your Username <input type="text" id="UserID">
+        <br> Enter Your Password <input type="password" id="Password">
+      </li>
+  </ul>
+  <p> <button onclick="doSomething()"> Login </button></p>
+  <footer>
+  <hr>
+  <small> &copy; Collin Drake February 6,2023  </small>
+  </footer> 
+
+  <script>
+    function doSomething()
+    {
+      var element = document.getElementById("UserID");
+      var element = document.getElementById("Password");
+      
+
+      if(UserName == "" && Password == "")
+      {
+        alert("Blank Entry. Try again");
+      }
+      else if (UserName == "Jsmith" && Password == "12345678") 
+      {
+        alert("Logged In");
+        
+      } 
+      else
+      {
+        alert("invalid Credentials");
+      }
+      
+    }
+   
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    
+        <title>Document</title>
+        <style>
+            body
+            {
+                background-color: tan;
+                color: black;
+            }
+
+            div
+            {
+                border: solid black;
+                border-width: 5px;
+                padding: 2px 2px 2px 2px;
+                margin: 10px 10px 10px 10px;
+                float: left;    width: 30%;
+            }
+            .fullwidth
+            {
+                width: 100%;
+
+            }
+        </style>
+    </head>
+    <body onload = "onLoad()">
+        <h1> DIV's and JavaScript </h1>
+        <div id="div1" >
+            <p> This is the first division. </p>
+        </div>
+        <div id="div2">            
+        </div>
+        <div id="div3" >
+            <img src="https://aptokash.github.io/Home/ZMarist_Logo.png"
+                id="image1" width=100px heigth=100px>        
+        </div>
+        <p style="clear:left;">
+        <div id="div4" >    
+            <p> This is the fourth division. </p>
+        </div>
+        
+        <div id="div5" >        
+            <p> This is the fifth division. </p>
+        </div>
+        <div id="div6" >        
+        </div>
+        
+        <div id="buttons" class="fullwidth">
+        <input type=button onclick="button1()" id="button1" value="Set" </button>
+        <input type=button onclick="" id="button2" value="Button 2" </button>
+        <input type=button onclick="" id="button3" value="Button 3" </button>
+        </div>   
+
+        <script>
+            globalAuthor = "Collin Drake";
+            globalNumber = Math.floor(math.random())
+
+            function onLoad()
+            {
+
+                document.getElementById("div2").innerHTML = "<p style ='color:brown;'>" + "<strong> Autloaded text for 2nd division </strong>";
+                document.getElementById("div6").innerHTML = "Autoloaded text for division 6";
+
+                div5 = document.getElementById("div5");
+                div5.innerHTML = "Coded by " + globalAuthor;
+            }
+            function button1()
+            {
+                but1 = document.getElementById("button1");
+                if (but1.value == "Set")
+                {
+                    but1.value = "Unset";
+                    document.getElementsById('button1').style.backgroundColor = "red";
+                    
+                }
+                else
+                {
+                    but1.value = "Set";
+                    document.getElementsById('button1').style.backgroundColor = "orange";
+
+                }
+                
+            }
+            function button2()
+            {
+
+
+            }
+
+
+        </script>
+
+        <footer>
+            <hr>
+            <small> &copy; C. Drake, February 27, 2023  </small>
+        </footer>
+        
+    </body>
+</html>

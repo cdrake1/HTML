@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    
+        <title>Document</title>
+        <style>
+            body
+            {
+                background-color: silver;
+                color: white;
+               
+            }
+            #Refrigerator
+            {
+        
+                border: solid black;
+                border-width: 5px;
+                padding: 2px 2px 2px 2px;
+                margin: 10px 10px 10px 10px;
+                float: center;    width: 80%;
+
+
+            }
+
+        </style>
+    </head>
+    <body onload = "doStartClock()">
+        <h1> Refrigerator </h1>
+        <div id="Refrigerator">
+
+        
+            <div id="on/off" >
+                <input type=button onclick="onOrOff()" id="buttonOnOff" value="On"> </button>           
+
+            </div>
+
+            <div id="temperature"> 
+                <button class="temp"> Temperature: 33 . 0 F </button>
+                
+            </div>
+
+            <div id="timePar" style="font-size: smaller;font-family: 'Courier New', Courier, monospace; text-align: left; color: black; border: solid black; float: left; width: 12%;  ">00:00:00</div>
+        <br>
+            <div id="open/close" >    
+                <input type=button onclick="openOrClose()" id="buttonOpen" value="Open"> </button>
+
+                <img id="image1" src="https://as2.ftcdn.net/v2/jpg/01/99/70/43/1000_F_199704319_ATYlKaKCWUgoZVIHIQQXkKYsJIR4oHbp.jpg" style="display:none;"/>
+               
+            </div>
+            
+            <div id="internet" >  
+                <input type=button onclick="webSearch()" id="buttonWeb" value="Search Web"> </button>      
+                <img id="image2" src="https://www.lifewire.com/thmb/LAo6oIpfpHZd-yCQjJOTbwaVwe8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Google-Videos-57240f2c3df78ced1fe05a21.png" style="display: none;"/>
+            </div>
+
+            <div id="tv" >  
+                <input type=button onclick="watchTv()" id="buttonTv" value="Watch Tv"> </button>
+                <img id="image3" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Ff%2Ff4%2FNetflix_-_English.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNetflix&tbnid=L4T337MTCHhiMM&vet=12ahUKEwixtM-687j9AhWBFVkFHftaAUcQMygHegUIARD7AQ..i&docid=uYOsQiK-6n7cAM&w=400&h=250&itg=1&q=netflix%20image&ved=2ahUKEwixtM-687j9AhWBFVkFHftaAUcQMygHegUIARD7AQ" style="display: none; size: 20%;"/>
+            </div>
+        </div>
+
+        <script>
+            function doStartClock()
+            {
+                setInterval(doClockTick,1000);
+
+            }
+            function doClockTick()
+            {
+                var currentDate = new Date();
+                var hours = currentDate.getHours();
+                var mins = currentDate.getMinutes();
+                var secs = currentDate.getSeconds();
+                var timeString = hours+":"+mins+":"+secs;
+
+                var outputElement = document.getElementById("timePar");
+                outputElement.textContent=timeString;
+
+            }
+
+            function onOrOff()
+            {
+                onOff = document.getElementById("buttonOnOff");
+                if (onOff.value == "On")
+                {
+                    onOff.value = "Off";
+                    
+                    
+                }
+                else
+                {
+                    onOff.value = "On";
+                    
+
+                }
+
+              
+            }
+
+            function openOrClose()
+            {
+                const image = document.getElementById("image1");
+                openClose = document.getElementById("buttonOpen");
+                if (openClose.value == "Open")
+                {
+                    openClose.value = "Close";
+                    image.style.display = "block";
+                    
+                }
+                else
+                {
+                    openClose.value = "Open";
+                    image.style.display = "none";
+                   
+                }
+    
+                
+            }
+
+            function webSearch()
+            {
+                const image = document.getElementById("image2");
+                web = document.getElementById("buttonWeb");
+                if (web.value == "Search Web")
+                {
+                    web.value = "Close Web";
+                    image.style.display = "block";
+                    
+                }
+                else
+                {
+                    web.value = "Search Web";
+                    image.style.display = "none";
+                }
+
+
+            }
+
+            function watchTv()
+            {
+                const image = document.getElementById("image3");
+                watch = document.getElementById("buttonTv");
+                if (watch.value == "Watch Tv")
+                {
+                    watch.value = "Turn Off Tv";
+                    image.style.display = "block";
+                    
+                }
+                else
+                {
+                    watch.value = "Watch Tv";
+                    image.style.display = "none";
+                }
+
+
+            }
+            function temperature()
+            {
+                temp = document.getElementById("buttonTemp");
+                
+            }
+         
+           
+
+
+        </script>
+
+        <footer>
+            <hr>
+            <small> &copy; C. Drake, February 27, 2023  </small>
+        </footer>
+        
+    </body>
+</html>

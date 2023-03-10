@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Error 404 </title>
+
+        <style>
+            body
+            {
+                background-color: #fff;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .Marist
+            {
+                padding: 100px 0;
+                background: #fff;
+                font-family: 'Arvo', serif;
+
+
+            }
+            .Marist img
+            {
+                width: 100%;
+
+            }
+            .error404
+            {
+                background-image: url(https://media.tenor.com/Vyh_NvG-BmwAAAAC/fox.gif);
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+            .error404 h1
+            {
+                font-size: 80px;
+
+            }
+            .error404 h3
+            {
+                font-size: 80px;
+
+            }
+            .content
+            {
+                margin-top: -50px;
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <section class="Marist">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="column">
+                        <div class="column2">
+                            <div class="404">
+                                <h1 class="error404"> Error 404 </h1>
+                            </div>
+                            <div class="content">
+                                <h3>
+                                    Are you lost?
+                                </h3>
+                                <p> Unfortunetly this page doesnt exist! </p>
+                                <input type="button" onclick="goback()" id="error" value="Go Back!" style="background-color: red;">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            
+
+            </div>
+
+        </section>
+
+        <script>
+            function goback()
+            {
+
+                goBack = document.getElementById("error");
+                if (goBack.value == "Go Back!")
+                {
+                    goBack.value = "BYE!";
+                    image.style.display = "block";
+                    
+                }
+
+            }
+        </script>
+    
+        
+    </body>
+
+</html>

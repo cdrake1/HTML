@@ -7,8 +7,8 @@
         <style>
             body
             {
-                background-color: silver;
-                color: white;
+                background-color: fff;
+                color: black;
                
             }
             #Refrigerator
@@ -31,7 +31,7 @@
 
         
             <div id="on/off" >
-                <input type=button onclick="onOrOff()" id="buttonOnOff" value="On"> </button>           
+                <input type=button onclick="onOrOff()" id="buttonOnOff" value="On" style="background-color: green;"> </button>           
 
             </div>
 
@@ -45,18 +45,18 @@
             <div id="open/close" >    
                 <input type=button onclick="openOrClose()" id="buttonOpen" value="Open"> </button>
 
-                <img id="image1" src="https://as2.ftcdn.net/v2/jpg/01/99/70/43/1000_F_199704319_ATYlKaKCWUgoZVIHIQQXkKYsJIR4oHbp.jpg" style="display:none;"/>
+                <img id="image1" src="https://as2.ftcdn.net/v2/jpg/01/99/70/43/1000_F_199704319_ATYlKaKCWUgoZVIHIQQXkKYsJIR4oHbp.jpg" style="display:none; width: 500px; height: auto;"/>
                
             </div>
             
             <div id="internet" >  
                 <input type=button onclick="webSearch()" id="buttonWeb" value="Search Web"> </button>      
-                <img id="image2" src="https://www.lifewire.com/thmb/LAo6oIpfpHZd-yCQjJOTbwaVwe8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Google-Videos-57240f2c3df78ced1fe05a21.png" style="display: none;"/>
+                <img id="image2" src="https://www.lifewire.com/thmb/LAo6oIpfpHZd-yCQjJOTbwaVwe8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Google-Videos-57240f2c3df78ced1fe05a21.png" style="display: none; width: 500px; height: auto;"/>
             </div>
 
             <div id="tv" >  
                 <input type=button onclick="watchTv()" id="buttonTv" value="Watch Tv"> </button>
-                <img id="image3" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Ff%2Ff4%2FNetflix_-_English.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNetflix&tbnid=L4T337MTCHhiMM&vet=12ahUKEwixtM-687j9AhWBFVkFHftaAUcQMygHegUIARD7AQ..i&docid=uYOsQiK-6n7cAM&w=400&h=250&itg=1&q=netflix%20image&ved=2ahUKEwixtM-687j9AhWBFVkFHftaAUcQMygHegUIARD7AQ" style="display: none; size: 20%;"/>
+                <img id="image3" src="https://d3dh6of9cnaq4t.cloudfront.net/Pictures/480xAny/9/5/6/10956_netflixhomepage_840558.jpg" style="display: none; width: auto; height: auto;"/>
             </div>
         </div>
 
@@ -85,12 +85,14 @@
                 if (onOff.value == "On")
                 {
                     onOff.value = "Off";
+                    onOff.style.backgroundColor = "red"
                     
                     
                 }
                 else
                 {
                     onOff.value = "On";
+                    onOff.style.backgroundColor = "green"
                     
 
                 }
